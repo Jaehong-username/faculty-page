@@ -1,0 +1,81 @@
+.logo{
+    width: 56.5px;
+    height: 105.14;
+    margin-bottom: 100px; /*create a margin at the bottom, so that the images moves up to the top*/
+}
+.main{
+    display:inline-block;
+    font-weight: bold;
+}
+
+.main .university{
+    color: #BF5700;  /*Check if Another CSS Rule is Overriding It   !important  if I put this keyword this will take priporiryy!*/  
+    margin-bottom: 0px; /*yellow box is a margin I wanna remove the yellow margin at the bottom*/
+}
+
+/*li  By default, <li> elements are block elements  we use inline to display on one line */
+.nav-item {
+    display: inline;
+}
+
+
+.navigation{
+    justify-content: space-between; /* Distributes items with equal spacing */
+    padding: 20px;
+    margin-right: 300px;
+}
+
+
+
+.info{
+    display:inline-block;
+    vertical-align: top; /* Aligns the text to the top of the image */
+}
+
+.contact{
+    line-height: 0.4; /* Adjust the line-height to reduce space */
+    display: block;
+    width: 225px;
+    height: 125px;
+    /*text-align: center;*/
+}
+.contact .email{
+    color: #BF5700;
+}
+
+.ans{
+    color: #BF5700;
+    font-weight: normal;
+}
+
+.btn-primary{
+    background-color: rgb(191, 87, 0); /*The color of the button (background color)*/
+    border: rgb(191, 87, 0); /*Button frame color*/
+}
+
+a{
+    color: rgb(191, 87, 0); /* Set the regular color of the text */
+}
+
+
+.bottom{
+    color: white;
+    margin-bottom: 400px;
+    background-color: rgb(77, 81, 85);
+}
+
+.bottom-horiz-line{
+    width: 450px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-gap: 10px;
+    background-color: rgb(77, 81, 85);;
+    color: white !important;
+}
+
+.grid{
+    display:inline;
+}
