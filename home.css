@@ -1,6 +1,13 @@
+.start-line{
+    border-width: 10px; /*to make the line little thicker*/
+    font-weight: bold;
+    margin-top: 0px;
+    border-color:rgb(191, 87, 0); /*From inspecting the actual website*/
+}
+
 .logo{
     width: 56.5px;
-    height: 105.14;
+    height: 50.14px;
     margin-bottom: 100px; /*create a margin at the bottom, so that the images moves up to the top*/
 }
 .main{
@@ -8,22 +15,42 @@
     font-weight: bold;
 }
 
+#engg{
+    font-weight: normal;
+    font-style: italic;
+}
+
 .main .university{
-    color: #BF5700;  /*Check if Another CSS Rule is Overriding It   !important  if I put this keyword this will take priporiryy!*/  
+    color: rgb(191, 87, 0);  /*Check if Another CSS Rule is Overriding It   !important  if I put this keyword this will take priporiryy!*/  
     margin-bottom: 0px; /*yellow box is a margin I wanna remove the yellow margin at the bottom*/
 }
+
+
+
+.search{
+    display: inline-block;
+    margin-left: 800px;
+    
+}
+
 
 /*li  By default, <li> elements are block elements  we use inline to display on one line */
 .nav-item {
     display: inline;
+    padding-left: 80px;
+    font-weight: bold;
+    position: relative; /* This allows the dropdown menu to be positioned relative to the nav item */
 }
 
 
-.navigation{
+.nav-bar{
     justify-content: space-between; /* Distributes items with equal spacing */
     padding: 20px;
     margin-right: 300px;
+    text-align: center;
 }
+
+
 
 .back{
     font-weight: bold;
@@ -48,11 +75,11 @@
     /*text-align: center;*/
 }
 .contact .email{
-    color: #BF5700;
+    color: rgb(191, 87, 0);;
 }
 
 .ans{
-    color: #BF5700;
+    color: rgb(191, 87, 0);;
     font-weight: normal;
 }
 
@@ -63,8 +90,12 @@
 
 a{
     color: rgb(191, 87, 0); /* Set the regular color of the text */
+    text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline; /* Adds the underline on hover */
+  }
 
 .bottom{
     color: white;
@@ -78,14 +109,14 @@ a{
 
 .wrapper{
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px; /*Defines three columns in the grid, each having a fixed width of 250px*/
-    grid-gap: 10px; /*gap betweeen items rows and columns*/
+    grid-template-columns: 250px 250px 250px 250px 250px; /*Defines three columns in the grid, each having a fixed width of 250px*/
+    grid-gap: 15px; /*gap betweeen items rows and columns*/
     background-color: rgb(77, 81, 85);
     color: white !important; /*text color to white with a priority.*/
 }
 
 .grid{
-    display:inline;
+    display:inline-block;
 }
 
 .vert-line{
@@ -94,5 +125,18 @@ a{
     background-color: white;
     border: none;
     position: absolute;
-    
+}
+
+h3{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.third-column{
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    width: 10px;
 }

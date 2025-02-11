@@ -18,25 +18,58 @@
 
 <body>
     
+    <hr class = "start-line">
+    
     <img class="logo" src = "/images/UniLogo.png" alt ="School Logo Image" /> <!--upload the image  alt: textual description of an image-->
     
     <div class = "main">
         <p class = "university">The University of Texas at Austin</p>
-        <p class = "department">Chandra Department of Electrical<br> and Computer Engineering<br><span id = "engg"></span>Cockrell School of Engineering</span></p>      
+        <p class = "department">Chandra Department of Electrical<br> and Computer Engineering<br><span id = "engg">Cockrell School of Engineering</span></p>      
     </div>
     
+    <form class="search">
+        <input type="text" placeholder="">
+        
+        <button type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+    </form>
     
     <hr class="full-horiz-line"> <!--hr element is used to draw a horizontal line-->
     
+    
+    
+    
     <!--Unordered list  ul-->
-    <ul class = "navigation">
-        <li class = "nav-item">ABOUT</li>
-        <li class = "nav-item">ACADEMICS</li>
-        <li class = "nav-item">PEOPLE</li>
-        <li class = "nav-item">RESEARCH</li>
-        <li class = "nav-item">NEWS</li>
-        <li class = "nav-item">EVENTS</li>
-        <li class = "nav-item">ENGAGE</li>
+    <ul class = "nav-bar">
+        <a href = "https://www.ece.utexas.edu/about">
+            <li class = "nav-item">ABOUT</li> <!--added class then listed the elements in horizontal a line-->
+        </a>
+        
+        <a href = "https://www.ece.utexas.edu/academics">
+            <li class = "nav-item">ACADEMICS</li>
+        </a>
+        
+        <a href = "https://www.ece.utexas.edu/people">
+            <li class = "nav-item">PEOPLE</li>
+        </a>
+        
+        <a href = "https://www.ece.utexas.edu/research">
+            <li class = "nav-item">RESEARCH</li>
+        </a>
+        
+        <a href = "https://www.ece.utexas.edu/news">
+            <li class = "nav-item">NEWS</li>
+        </a>
+        
+        <a href = "https://www.ece.utexas.edu/events">
+            <li class = "nav-item">EVENTS</li>
+        </a>
+        
+        <a href = "https://www.ece.utexas.edu/engage">
+            <li class = "nav-item">ENGAGE</li>
+        </a>
+        
     </ul>
     
 
@@ -100,9 +133,9 @@
             </button>
         </a>
         
-        <header>
-            <h5>Related Articles</h5>
-        </header>
+        
+        <h3>Related Articles</h5>
+        
         
         <div>
             <ul class = "publications">
@@ -153,20 +186,31 @@
     
     <div class = "bottom">
         <hr class="full-horiz-line"> <!--hr element is used to draw a horizontal line-->
-  
-        <img class="logo" src = "/images/UniLogo.png" alt ="School Logo Image" /> <!--upload the image  alt: textual description of an image-->
-    
-        <div class = "main">
-            <p class = "university">The University of Texas at Austin</p>
-            <p class = "department">Cockrell School of Engineering</p>      
-        </div>
-        <hr class="bottom-horiz-line">
+
         
-        <p>The University of Texas at Austin 2025 | Privacy Policy | Web Accessibility
-        </p>
+        <ul class = "init-column">
+            <img class="logo" src = "/images/UniLogo.png" alt ="School Logo Image" /> <!--upload the image  alt: textual description of an image-->   
+            <div class = "main">
+                <p class = "university">The University of Texas at Austin</p>
+                <p class = "department">Cockrell School of Engineering</p>      
+            </div>
+            <hr class="bottom-horiz-line">
+            <p>The University of Texas at Austin 2025 | Privacy Policy | Web Accessibility</p>
+        </ul>
+        
+        
         
         <div class = "grid">
             <div class = "wrapper">
+                
+                <ul class = "in-column">
+                    <!-- <hr class="vert-line">-->
+                </ul>
+                
+                <ul class = "third-column">
+                    <!-- <hr class="vert-line">-->
+                </ul>
+                
                 <ul class = "first-column">
                     <a href = "https://www.ece.utexas.edu/direct/list">
                         <li>ECE Direct</li>
@@ -184,6 +228,8 @@
                         <li>ENGR Direct Students</li>
                     </a>
                 </ul>
+                
+                
                 
                 <ul class = "second-column">
                     <a href = "https://enterprise.login.utexas.edu/idp/profile/SAML2/Redirect/SSO?execution=e10s1">
@@ -211,9 +257,8 @@
                     </a>
                 </ul>
                 
-                <ul class = "third-column">
-                    <hr class="vert-line">
-                </ul>
+                
+                
                 
                 <ul class = "forth-column">
                     <a href="https://x.com/#!/utexasece" target="_blank"> <!--_blank means to open a new tab when an user clicks on it-->
