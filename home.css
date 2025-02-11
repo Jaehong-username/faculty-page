@@ -25,6 +25,14 @@
     margin-right: 300px;
 }
 
+.back{
+    font-weight: bold;
+}
+
+.faculty{
+    width: 300px;
+    height: 300px;
+}
 
 
 .info{
@@ -70,12 +78,21 @@ a{
 
 .wrapper{
     display: grid;
-    grid-template-columns: 250px 250px 250px;
-    grid-gap: 10px;
-    background-color: rgb(77, 81, 85);;
-    color: white !important;
+    grid-template-columns: 250px 250px 250px 250px; /*Defines three columns in the grid, each having a fixed width of 250px*/
+    grid-gap: 10px; /*gap betweeen items rows and columns*/
+    background-color: rgb(77, 81, 85);
+    color: white !important; /*text color to white with a priority.*/
 }
 
 .grid{
     display:inline;
+}
+
+.vert-line{
+    width: 1px;
+    height: 400px;
+    background-color: white;
+    border: none;
+    position: absolute;
+    
 }
